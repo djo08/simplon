@@ -1,2 +1,10 @@
-nVarNom=prompt("qui es tu ?","je suis johanna")
-alert(nVarNom)
+function over(id,type){
+
+var objet = document.getElementById('info');
+
+if(type==1)objet.style.display = 'block';
+
+else
+objet.style.display = 'none';
+
+}
