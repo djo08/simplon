@@ -32,25 +32,10 @@ function traitement (){
     if (isset($_POST['autre'])) {
       $autre = $_POST['autre'];
     }
-    echo $autre;
-    echo $loisir;
-    echo $adresse;
-    echo $choix;
-    echo $prenom;
-    echo $nom;
-    echo $genre;
 
 
-<?php
-     $to      = 'djoandco@gmail.com';
-     $subject = 'test';
-     $message = $autre.' '.$loisir.' '.$adresse.' '.$choix.' '.$prenom.' '.$nom.' '.$genre.';
-     $headers = 'From: webmaster@example.com' . "\r\n" .
-     'Reply-To: webmaster@example.com' . "\r\n" .
-     'X-Mailer: PHP/' . phpversion();
 
-     mail($to, $subject, $message, $headers);
- ?>
+
 
   }
 traitement();
