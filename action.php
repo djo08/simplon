@@ -32,16 +32,24 @@ function traitement (){
     if (isset($_POST['autre'])) {
       $autre = $_POST['autre'];
     }
+}
+$to      = 'djoandco@gmail.com';
+$subject = 'test';
+
+$message = $autre.'<br/>';
+$message .= $loisir.'<br/>';
+$message .= $adresse.'<br/>';
+$message .= $choix.'<br/>';
+$message .= $prenom.'<br/>';
+$message .= $nom.'<br/>';
+$message .= $genre.'<br/>';
+
+$headers = "Content-Type:text/html;charset=UTF-8";
+
+mail($to, $subject, $message, $headers );
 
 
-
-
-
-  }
 traitement();
-
-
-
 
 
 ?>
